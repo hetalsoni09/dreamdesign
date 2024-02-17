@@ -150,7 +150,7 @@ a:focus {
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-    color: white;
+    color: #003049;
 }
 
 .navbar .navbar-brand img {
@@ -174,6 +174,7 @@ a:focus {
         background: #003049 !important;
         border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
+        color: black;
     }
     
     .navbar.nav-sticky {
@@ -182,7 +183,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        color: white;
     }
     
     .navbar.nav-sticky .navbar-brand {
