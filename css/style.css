@@ -245,6 +245,7 @@ a:focus {
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
+
 .hero {
     position: relative;
     width: 100%;
@@ -258,219 +259,74 @@ a:focus {
     background-size: cover;
 }
 
-.hero .container-fluid {
-    padding: 0;
-}
-
 .hero .hero-image {
     position: relative;
     text-align: right;
     padding-right: 75px;
+    margin-top: -150px;
 }
 
 .hero .hero-image img {
     max-width: 350%;
+    margin-top: 500px;
     max-height: 100%;
 }
-*/
-.hero .hero-content {
-    position: relative;
-    padding-left: 75px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hero .hero-text p {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.hero .hero-text h1 {
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-}
-
-.hero .hero-text h2 {
-    display: inline-block;
-    margin: 0;
-    height: 35px;
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.hero .hero-text .typed-text {
-    display: none;
-    color: #003049;
-}
-
-.hero .hero-text .typed-cursor {
-    font-size: 35px;
-    font-weight: 300;
-    color: #003049;
-}
-
-.hero .hero-btn .btn {
-    margin-top: 35px;
-    color:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.hero .hero-btn .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-.hero .hero-btn .btn:first-child {
-    margin-right: 10px;
-}
-
-@media (max-width: 991.98px) {
-    .hero {
-        padding-top: 60px;
-    }
+body { 
+    text-align:left;
+    font-size: 30px;
+    margin-bottom: 100px;   
+  } 
+  #cont{
+    color:#003049;
+    font-size:40px;
+    font-weight:bolder;
+    width:100%;
+    bottom:100%;
+    display:block;
+    margin-top: 200px;
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div  {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
     
-    .hero .hero-content {
-        padding: 0 15px;
-    }
-    
-    .hero .hero-text p {
-        font-size: 20px;
-    }
-    
-    .hero .hero-text h1 {
-        font-size: 45px;
-    }
-    
-    .hero .hero-text h2 {
-        font-size: 25px;
-        height: 25px;
-    }
-    
-    .hero .hero-btn .btn {
-        padding: 12px 30px;
-        letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
-    .hero,
-    .hero .hero-text,
-    .hero .hero-btn {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .hero .hero-text p {
-        font-size: 18px;
-    }
-    
-    .hero .hero-text h1 {
-        font-size: 35px;
-    }
-    
-    .hero .hero-text h2 {
-        font-size: 22px;
-        height: 22px;
-    }
-    
-    .hero .hero-btn .btn {
-        padding: 10px 15px;
-        letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .hero .hero-text p {
-        font-size: 16px;
-    }
-    
-    .hero .hero-text h1 {
-        font-size: 30px;
-    }
-    
-    .hero .hero-text h2 {
-        font-size: 18px;
-        height: 18px;
-    }
-    
-    .hero .hero-btn .btn {
-        padding: 8px 10px;
-        letter-spacing: 0;
-    }
-}
+  }
+  #flip div div  {
+    background:#0883a2;
+    height: 50px;
+  }
+  #flip div:first-child div {
+    background:#003049;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+ 
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
 
 
-/*******************************/
-/******* Section Header ********/
-/*******************************/
-.section-header {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.section-header p {
-    display: inline-block;
-    margin: 0 30px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #ffffff;
-}
-
-.section-header p::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    z-index: -1;
-}
-
-.section-header p::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 3px;
-    top: 11px;
-    left: 3px;
-    background:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    z-index: 1;
-}
-
-.section-header h2 {
-    margin: 0;
-    position: relative;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-@media (max-width: 767.98px) {
-    .section-header h2 {
-        font-size: 30px;
-    }
-}
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
@@ -604,12 +460,13 @@ a:focus {
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
+    height: 250px;
 }
 
 .portfolio .portfolio-img img {
     position: relative;
-    width: 85%; 
-    height: 85%; 
+    width: 100%; 
+    height: 100%; 
     object-fit: cover;
     transform: scale(1.1);
     transition: .5s;
@@ -715,248 +572,6 @@ a:focus {
     box-shadow: inset 0 0 0 0 #ffffff;
     border-color: #ffffff;
 }
-
-
-/*******************************/
-/********* Pricing CSS *********/
-/*******************************/
-.price {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.price .row {
-    padding: 0 15px;
-}
-
-.price .col-md-4 {
-    padding: 0;
-}
-
-.price .price-item {
-    position: relative;
-    margin-bottom: 30px;
-    background: #ffffff;
-}
-
-.price .featured-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-    z-index: 1;
-}
-
-.price .price-header,
-.price .price-body,
-.price .price-footer {
-    position: relative;
-    text-align: center;
-}
-
-.price .price-header {
-    padding: 45px 0 30px 0;
-    color: #414141;
-}
-
-.price .price-item.featured-item .price-header {
-    color:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-}
-
-.price .price-title h2 {
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.price .price-prices h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 10px;
-}
-
-.price .price-prices h2 small {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 9px;
-    margin-left: -12px;
-}
-
-.price .price-prices h2 span {
-    margin-left: 1px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.price .price-item.featured-item h2 {
-    color: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-}
-
-.price .price-body {
-    padding: 0 0 20px 0;
-}
-
-.price .price-description ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.price .price-description ul li {
-    padding: 0 0 20px 0;
-}
-
-.price .price-item .price-action {
-    padding-bottom: 45px;
-}
-
-.price .price-item .price-action .btn {
-    color: #ffffff;
-    background: #414141;
-    box-shadow: inset 0 0 0 50px #414141;
-}
-
-.price .price-item .price-action .btn:hover {
-    color: #414141;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #414141;
-    border-color: #414141;
-}
-
-.price .price-item.featured-item .price-action .btn {
-    color: #ffffff;
-    background:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    box-shadow: inset 0 0 0 50px linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-}
-
-.price .price-item.featured-item .price-action .btn:hover {
-    color: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    background: transparent;
-    box-shadow: inset 0 0 0 0 linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    border-color:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-}
-
-
-/*******************************/
-/*********** Team CSS **********/
-/*******************************/
-.team {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.team .team-item {
-    position: relative;
-    background: #ffffff;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.team .team-img {
-    position: relative;
-    width: 50%;
-    overflow: hidden;
-}
-
-.team .team-img img {
-    position: relative;
-    width: 100%;
-    transition: .5s;
-}
-
-.team .team-text {
-    position: relative;
-    width: 50%;
-    padding: 0 30px;
-}
-
-.team .team-text h2 {
-    color:linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    transition: 1s;
-}
-
-.team .team-text h4 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    transition: 1s;
-}
-
-.team .team-text p {
-    margin-bottom: 20px;
-    transition: 1s;
-}
-
-.team .team-social {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.team .team-social a.btn {
-    width: 35px;
-    height: 35px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: normal;
-    margin-right: 5px;
-}
-
-.team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95));
-}
-
-.team .team-item:hover .team-img img {
-    transform: scale(1.2);
-}
-
-.team .team-item:hover .team-text h2,
-.team .team-item:hover .team-text h4,
-.team .team-item:hover .team-text p {
-    color: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn {
-    background: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn:hover {
-    border-color: #ffffff;
-}
-
-@media(max-width: 575.98px) {
-    .team .team-text {
-        padding: 0 15px;
-    }
-    
-    .team .team-text h2 {
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    .team .team-text h4 {
-        margin-bottom: 5px;
-    }
-
-    .team .team-text p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 10px;
-    }
-}
-
-
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
