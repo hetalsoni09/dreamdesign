@@ -150,7 +150,7 @@ a:focus {
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-    
+    color: white;
 }
 
 .navbar .navbar-brand img {
@@ -260,16 +260,12 @@ a:focus {
 }
 
 .hero .hero-image {
-    position: relative;
-    text-align: right;
     padding-right: 75px;
     margin-top: -150px;
 }
 
 .hero .hero-image img {
-    max-width: 350%;
     margin-top: 500px;
-    max-height: 100%;
 }
 body { 
     text-align:left;
@@ -783,13 +779,14 @@ body {
 .blog .blog-text {
     position: relative;
     padding: 30px;
+    font-size: 20px;
     border-right: 1px solid rgba(0, 0, 0, .07);
     border-bottom: 1px solid rgba(0, 0, 0, .07);
     border-left: 1px solid rgba(0, 0, 0, .07);
 }
 
 .blog .blog-text h2 {
-    font-size: 25px;
+    font-size: 2px;
     font-weight: 600;
 }
 
@@ -909,6 +906,7 @@ body {
     margin-top: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
+font-size: 20px;
 }
 
 .footer .copyright::before {
@@ -932,7 +930,8 @@ body {
 
 .footer .copyright p a {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 20px;
 }
 .footer .copyright p a:hover {
     color: #414141;
